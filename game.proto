@@ -1,0 +1,28 @@
+syntax = "proto3";
+package game;
+
+message Game {
+string id = 1;
+string title = 2;
+string description = 3;
+
+}
+
+message GetGameRequest {
+string game_id = 1;
+}
+message GetGameResponse {
+Game game = 1;
+}
+message SearchGamesRequest {
+string query = 1;
+}
+message SearchGamesResponse {
+repeated Game games = 1;
+}
+// Définition du service de films
+service GameService {
+rpc Getgame(GetGameRequest) returns (GetGameRequest);
+rpc SearchGames(SearchGamesRequest) returns (SearchGamesResponse);
+// Ajouter d'autres méthodes au besoin
+}

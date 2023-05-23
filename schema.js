@@ -1,15 +1,16 @@
-const { gql } = require('@apollo/server');
+const { gql } = require('apollo-server-express');
 
-const typeDefs = `#graphql
-type Game {
-id: String!
-title: String!
-description: String!
-}
-type Query {
-game(id: String!): Game
-games: [Game]
-}
-`
-;
-module.exports = typeDefs
+const typeDefs = gql`
+  type Game {
+    id: String!
+    title: String!
+    description: String!
+  }
+
+  type Query {
+    game(id: String!): Game
+    games: [Game]
+  }
+`;
+
+module.exports = typeDefs;

@@ -15,14 +15,12 @@ This project implements a microservices architecture using gRPC, REST, and Graph
 
    ```bash
    git clone https://github.com/your-username/microservices-project.git
-=============================================================================
+
 cd microservices-project
 npm install
 node apiGateway.js
-=============================================================================
+
 USAGE:
-
-
 REST API
 The REST API provides endpoints for game management:
 
@@ -47,13 +45,8 @@ query {
     description
   }
 }
-=================================================================================
+
 License :This project is licensed under the MIT License.
-=================================================================================
-
-
-
-
 
 Feel free to modify the content and add more sections as needed to provide 
 comprehensive information about your microservices project.
